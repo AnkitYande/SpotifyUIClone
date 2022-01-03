@@ -1,17 +1,10 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
+import 'package:flutter/material.dart';
 import 'h_list.dart';
 import 'recs.dart';
-import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
 
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,17 +53,6 @@ class _HomePageState extends State<HomePage> {
             HList(headding: "Uniqulely yours")
           ]),
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Color(0xf0101010),
-        type: BottomNavigationBarType.fixed,
-        elevation: 0,
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.library_music), label: 'Your Libary'),
-        ],
       ),
     );
   }

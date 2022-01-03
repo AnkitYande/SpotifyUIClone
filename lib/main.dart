@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'homepage.dart';
+import 'navigation.dart';
 
 void main() {
   Paint.enableDithering = true;
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
-        child: HomePage(),
+        child: Navigation(),
       ),
     );
   }
