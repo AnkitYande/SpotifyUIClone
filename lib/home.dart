@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'h_list.dart';
 import 'recs.dart';
@@ -31,8 +33,7 @@ class Home extends StatelessWidget {
               Row(children: const [
                 Icon(Icons.notifications_outlined),
                 Padding(
-                    padding: const EdgeInsets.all(20),
-                    child: Icon(Icons.history)),
+                    padding: EdgeInsets.all(20), child: Icon(Icons.history)),
                 Icon(Icons.settings_outlined)
               ])
             ]),
@@ -50,7 +51,8 @@ class Home extends StatelessWidget {
             HList(headding: "Recently Played"),
             HList(headding: "Hip-Hop"),
             HList(headding: "More of what you like"),
-            HList(headding: "Uniqulely yours")
+            HList(headding: "Uniqulely yours"),
+            HList(headding: "Fresh new music")
           ]),
         ),
       ),

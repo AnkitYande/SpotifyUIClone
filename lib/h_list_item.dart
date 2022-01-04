@@ -29,7 +29,7 @@ class HListItem extends StatelessWidget {
                     "Album · Kid Cudi",
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(color: Colors.white.withAlpha(75)),
+                    style: TextStyle(color: Colors.white.withAlpha(100)),
                   )),
             ]),
           ),

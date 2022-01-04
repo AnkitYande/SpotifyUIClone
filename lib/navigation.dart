@@ -18,7 +18,7 @@ class _NavigationState extends State<Navigation> {
     Search(),
     Lib(),
   ];
-  int _selectedIndex = 1;
+  int _selectedIndex = 0;
   void _navigation(int index) {
     setState(() {
       _selectedIndex = index;
