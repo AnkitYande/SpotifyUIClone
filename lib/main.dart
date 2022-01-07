@@ -1,9 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
+import 'package:http/http.dart' as http;
 import 'package:flutter/material.dart';
 import 'navigation.dart';
+import 'dart:convert';
 
-void main() {
+Future<void> main() async {
   Paint.enableDithering = true;
   runApp(const MyApp());
 }

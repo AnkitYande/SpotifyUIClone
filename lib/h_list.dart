@@ -1,8 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-
-import 'h_list_item.dart';
+import 'package:spotify_app_clone/h_list_item_loader.dart';
 
 class HList extends StatelessWidget {
   final String headding;
@@ -27,12 +26,12 @@ class HList extends StatelessWidget {
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: [
-              HListItem(),
-              HListItem(),
-              HListItem(),
-              HListItem(),
-              HListItem(),
-              HListItem()
+              HListItemLoader(),
+              HListItemLoader(),
+              HListItemLoader(),
+              HListItemLoader(),
+              HListItemLoader(),
+              HListItemLoader()
             ],
           ),
         ),
