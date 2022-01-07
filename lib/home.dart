@@ -3,9 +3,11 @@
 import 'package:flutter/material.dart';
 import 'h_list.dart';
 import 'recs.dart';
+import 'util.dart';
 
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+  final List<Album> albums;
+  const Home({Key? key, required this.albums}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -42,17 +44,25 @@ class Home extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Column(children: [RecCard(), RecCard(), RecCard()]),
-                Column(children: [RecCard(), RecCard(), RecCard()])
+                Column(children: [
+                  RecCard(albums: albums, index: 44),
+                  RecCard(albums: albums, index: 45),
+                  RecCard(albums: albums, index: 46)
+                ]),
+                Column(children: [
+                  RecCard(albums: albums, index: 47),
+                  RecCard(albums: albums, index: 48),
+                  RecCard(albums: albums, index: 49)
+                ])
               ],
             ),
 
             //Horrizontal Scrolling Lists
-            HList(headding: "Recently Played"),
-            HList(headding: "Hip-Hop"),
-            HList(headding: "More of what you like"),
-            HList(headding: "Uniqulely yours"),
-            HList(headding: "Fresh new music")
+            HList(albums: albums, row: 0, headding: "Fresh new music"),
+            HList(albums: albums, row: 1, headding: "Recently Played"),
+            HList(albums: albums, row: 2, headding: "Hip-Hop"),
+            HList(albums: albums, row: 3, headding: "More of what you like"),
+            HList(albums: albums, row: 4, headding: "Uniqulely yours"),
           ]),
         ),
       ),

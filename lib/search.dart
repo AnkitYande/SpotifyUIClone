@@ -66,7 +66,8 @@ class Search extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.all(Radius.circular(10)),
                 child: Image(
-                    image: AssetImage('assets/album_1.jpeg'),
+                    image: AssetImage(
+                        'assets/search_page/cover_${index.toString().padLeft(4, '0')}.png'),
                     fit: BoxFit.cover),
               ),
             );

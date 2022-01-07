@@ -1,11 +1,13 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:spotify_app_clone/util.dart';
 import './lib_card.dart';
 import './second_btn.dart';
 
 class Lib extends StatelessWidget {
-  const Lib({Key? key}) : super(key: key);
+  final List<Album> albums;
+  const Lib({Key? key, required this.albums}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -69,7 +71,7 @@ class Lib extends StatelessWidget {
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 1, childAspectRatio: 4),
           itemBuilder: (context, index) {
-            return LibCard();
+            return LibCard(album: albums[index]);
           },
         ),
       ),
