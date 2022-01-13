@@ -12,5 +12,5 @@ https://user-images.githubusercontent.com/56141804/148618718-625caa21-3878-4b3c-
 (For android: start a simulator in android studio)
 3) Run project:
  ```
- fultter run 
+ flutter run 
  ```
