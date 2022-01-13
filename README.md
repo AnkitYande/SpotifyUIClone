@@ -1,6 +1,6 @@
 # spotify_app_clone
 
-A clone of the Spotify mobile UI written in Dart using Flutter.\\
+A clone of the Spotify mobile UI written in Dart using Flutter.
 
 This is my first time using Dart/ Flutter. The application was created from scratch in 4 days including time to learn the language/ framework.\
 The data for the album infromation and art was pulled from the Discogs RESTful API
