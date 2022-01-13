@@ -8,8 +8,8 @@ https://user-images.githubusercontent.com/56141804/148618718-625caa21-3878-4b3c-
 
 ## Getting Started
 1) Navigate to the project directory
-2) Open a simpulator (on iOS: ```open -a Simulator```)
-(For android, start a simulator in android studio)
+2) Open a simpulator (For iOS: ```open -a Simulator```)
+(For android: start a simulator in android studio)
 3) Run project:
  ```
  fultter run 
